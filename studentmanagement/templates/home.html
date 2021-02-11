@@ -1,0 +1,153 @@
+{% extends 'navigationbar.html'%}
+{% block body %}
+{% load static %}
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="{%static '/images/workatasd.jpg'%}" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">LEARNING SCHOOL</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Oh snap! We just showed you a modal..</h4>
+      <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <p>Cool huh? Ok, enough teasing around..</p>
+      <p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">Explore</a> to learn more!</p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>Modal footer</p>
+    </footer>
+  </div>
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>OUR TEAM</h2>
+<p>Meet the team</p>
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="{%static '/images/11.jpg'%}" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Krishna Verma</h3>
+  <p>Principal</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="{%static '/images/9.jpg'%}" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Priya Shukla</h3>
+  <p>Vice Principal</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="{%static '/images/10.jpeg'%}" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Aradhya Chaudhary</h3>
+  <p>Co-ordinator</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="{%static '/images/33.jpg'%}" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Ramesh Lodhi</h3>
+  <p>Head Of Department</p>
+</div>
+
+</div>
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+<div class="w3-quarter">
+<h2>Our Work</h2>
+<p>Annual School Events Overview. ... Students and teachers take the lead in organising the School Festival in spring, Sports Day in fall, and the All School Production in winter, while parents are the driving force behind the International Fair in November.
+Planned, prepared and run by the SOIS student council, the School Festival is our big event of the spring trimester. Each homeroom class and a number of cultural clubs contribute to the day with projects such as food stalls, games, theatrical and musical performances and exhibitions. Profits from the event are donated to good causes. In keeping with our mission statement, the festival encourages students to become informed, caring, creative and to contribute to the global community.</p>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="{%static '/images/w.png'%}" alt="Snow" style="width:100%">
+  <div class="w3-container">
+  <h3>Winter Carnival</h3>
+  <h4>Events</h4>
+  <p>We organized our first ever Funfair for our students. The main idea behind organizing the funfair was to bring students, teachers and parents together to enjoy the day to the fullest. The hard work, enthusiasm and energy by the Primus staff and the children bore fruit.</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="{%static '/images/111.jpg'%}" alt="Lights" style="width:100%">
+  <div class="w3-container">
+  <h3>Annual Function</h3>
+  <h4>Events</h4>
+  <p>The annual functions are very important in a school because it will increase the talent and all extracurricular activities of a child. They can think and realize the talents inside of them. Nowadays kids are very interested in different activities like dancing, singing, painting, playing instruments etc</p>
+  
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="{%static '/images/a.png'%}" alt="Mountains" style="width:100%">
+  <div class="w3-container">
+  <h3>Annual Sports Day</h3>
+  <h4>Events</h4>
+  <p>A melodious welcome song was rendered by the school choir. The Sports Day was inaugurated by releasing balloons and beautifully decorated placard bearing the School's name and motto by the Chief Guests, Guests of Honour, and the Principal. Then the much awaited track and field events started.
+</p>
+  
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
+
+{%endblock%}
